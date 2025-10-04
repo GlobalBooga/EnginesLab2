@@ -157,4 +157,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Lightning
   ignoreLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 65

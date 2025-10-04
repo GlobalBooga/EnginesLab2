@@ -12,7 +12,7 @@ public class Dart : Projectile
     }
     protected override void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("Dart collision");
+        if (other.gameObject.TryGetComponent(out Enemy enemy)) enemy.OnHit();
         Destroy(gameObject);
     }
 }

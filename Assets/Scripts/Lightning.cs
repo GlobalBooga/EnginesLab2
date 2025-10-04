@@ -13,7 +13,10 @@ public class Lightning : Projectile
 
         lineRenderer.SetPosition(0, gameObject.transform.position);
         if (hit.collider) lineRenderer.SetPosition(1, hit.point);
-        else lineRenderer.SetPosition(1, gameObject.transform.position + new Vector3(directionNormalized.x, directionNormalized.y,0) * 200);
+        else lineRenderer.SetPosition(1, gameObject.transform.position + (Vector3)directionNormalized * 200);
+        
+        if (hit.collider && hit.collider.gameObject.TryGetComponent(out Enemy enemy)) enemy.OnHit();
+        
         Destroy(gameObject, 0.5f);
     }
 
