@@ -3,7 +3,7 @@
 Alex Anastasakis
 100892202
 
-Title: Shoot the things!
+### Title: Shoot the things!
 This is a simple 2D game where you shoot shapes that are trying to swarm you.
 The game loop is simple: pick a projectile, shoot the things!
 
